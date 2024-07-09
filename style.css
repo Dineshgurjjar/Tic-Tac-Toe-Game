@@ -1,3 +1,4 @@
+/* Global styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,37 +11,45 @@ body {
     align-items: center;
     height: 100vh;
     background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     font-family: Arial, sans-serif;
     margin: 0;
-    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
-.rules{
+
+/* Rules styles */
+.rules {
     display: flex;
     align-items: end;
     justify-content: right;
     height: 10px;
     margin: 2px;
-    }
-.rules a{
-    text-decoration: none;
-}
-.dark-theme{
-    background: rgb(0,0,0);
-    background: linear-gradient(151deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(125,23,23,1) 100%, rgba(170,31,31,1) 100%);
 }
 
+.rules a {
+    text-decoration: none;
+}
+
+/* Dark theme styles */
+.dark-theme {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(151deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(125, 23, 23, 1) 100%, rgba(170, 31, 31, 1) 100%);
+}
+
+/* Container styles */
 .container {
     text-align: center;
     padding: 20px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px; /* Ensure there's margin on small screens */
 }
 
+/* Heading styles */
 h1 {
     margin-bottom: 20px;
     color: #333;
@@ -52,6 +61,7 @@ h1 {
     to { opacity: 1; }
 }
 
+/* Scoreboard styles */
 .scoreboard {
     display: flex;
     justify-content: space-around;
@@ -60,10 +70,12 @@ h1 {
     color: #333;
 }
 
+/* Game settings styles */
 .game-settings {
     margin-bottom: 20px;
 }
 
+/* Game board styles */
 .game-board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -104,6 +116,7 @@ h1 {
     to { transform: scale(1); }
 }
 
+/* Button styles */
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -120,17 +133,20 @@ button:hover {
     background-color: #feb47b;
 }
 
+/* Input and select styles */
 input[type="text"], select {
     padding: 5px;
     margin: 5px;
 }
 
+/* Message styles */
 #message {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
 }
 
+/* Theme selector styles */
 .theme-selector {
     margin-bottom: 20px;
 }
@@ -148,6 +164,7 @@ input[type="text"], select {
     background-color: #d1d1d1;
 }
 
+/* Mode selector styles */
 .mode-selector {
     margin-bottom: 20px;
 }
@@ -165,6 +182,7 @@ input[type="text"], select {
     background-color: #d1d1d1;
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 600px) {
     .game-board {
         grid-template-columns: repeat(3, 70px);
@@ -183,5 +201,11 @@ input[type="text"], select {
 
     #message {
         font-size: 16px;
+    }
+
+    .container {
+        padding: 15px;
+        width: 100%;
+        margin: 10px;
     }
 }

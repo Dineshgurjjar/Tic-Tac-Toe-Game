@@ -75,6 +75,12 @@ h1 {
     margin-bottom: 20px;
 }
 
+.game-settings input[type="text"], .game-settings select {
+    padding: 5px;
+    margin: 5px;
+    font-size: 1em; /* Ensure font size is consistent */
+}
+
 /* Game board styles */
 .game-board {
     display: grid;
@@ -137,6 +143,7 @@ button:hover {
 input[type="text"], select {
     padding: 5px;
     margin: 5px;
+    font-size: 1em; /* Ensure font size is consistent */
 }
 
 /* Message styles */
@@ -207,5 +214,11 @@ input[type="text"], select {
         padding: 15px;
         width: 100%;
         margin: 10px;
+    }
+
+    .game-settings input[type="text"], .game-settings select {
+        width: 100%;
+        font-size: 0.9em;
+        margin: 5px 0; /* Adjust margin for smaller inputs */
     }
 }

@@ -1,3 +1,4 @@
+/* Global styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,17 +14,21 @@ body {
     height: 100vh;
     margin: 0;
     background: #000;
+    margin-top: 70px;
 }
 
+/* Container styles */
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
 
+/* Heading styles */
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -35,6 +40,7 @@ h2 {
     color: #333;
 }
 
+/* Paragraph and list styles */
 p, ul, ol {
     margin-bottom: 15px;
     color: #555;
@@ -48,9 +54,42 @@ li {
     margin-bottom: 5px;
 }
 
+/* Rules section styles */
 .rules {
     padding: 10px 20px;
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+
+    p, ul, ol {
+        font-size: 0.9em;
+    }
+
+    .rules {
+        padding: 10px;
+    }
 }
